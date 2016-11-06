@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'sqlite3'
@@ -11,7 +11,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
-gem 'jquery-validation-rails'
+gem "carrierwave"
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -21,6 +22,7 @@ end
 
 group :test do
   gem "capybara"
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 group :development do
